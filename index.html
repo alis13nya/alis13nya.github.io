@@ -4,24 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alis</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <script src="/jquery.js"></script>
+    <link rel="icon" href="images/иконка.ico">
 </head>
 <body>
-    <header align="center">
-        <img src="лого.png" alt="INTRO"
-        <ul>
-            <li><a href = "#">ОБО МНЕ</a></li>
-            <li><a href = "#">МОИ РАБОТЫ</a></li>
-            <li><a href = "#">КОНТАКТЫ</a></li>
-        </ul>
-    </header>
-    <main align="content">
-        <img src="animation_девочка_сайт_.gif" alt="">
-        <img src="мое фото.png" alt="">
+    <header>
+        <img class="logo" src="images/лого.png" alt="INTRO">
+        <nav>
+            <ul>
+                <li id="about_me_scroll"><a href = "#">ОБО МНЕ</a></li>
+                <li id="works_scroll"><a href = "#">МОИ РАБОТЫ</a></li>
+                <li id="contacts_scroll"><a href = "#">КОНТАКТЫ</a></li>
+            </ul>
 
+        </nav>
+        
+    </header>
+    <main>
+        <div class="main-container">
+            
+            <img class="girl-gif" id="girl-gif" src="images/анимация_с_девочкой.gif" alt="">
+            <button class="secret_Button" id="secret_Button" onclick="changeImage(this)">НЕ НАЖИМАЙ!!!</button>
+            
+            <div style="height: 200px;">
+
+            </div>
+
+            <section id="about-me" class="about-me">
+                <div class="main-info">
+                    <h1> ОБО МНЕ</h1>
+                    <p><span style="color: #FF00A8;">Alis</span>
+                        Жизнерадостный дизайнер, готовый удивлять!</p>
+                    <h2>ТЕХНИЧЕСКИЕ НАВЫКИ</h2>  
+                    <img src="images/навыки.png" class="skills"/> 
+    
+                </div>
+                <a href="images/мое фото.png" class="lightzoom">     
+                    <img src="images/мое фото.png" class="my_photo"/>
+                </a>
+            </section>
+            <button id="scroll" class="skroll skroll_1">
+                <img src="images/кнопка_возврат.png"/>
+            </button>
+            
+        </div>
+
+        <div id="works" class="works-container">
+            <h1>МОИ РАБОТЫ</h1>
+            <div class="buttons-container">
+                <div class="buttons-left">
+                    <button onclick="location.href='spec_graphic.html'" class="button_ris button_text">
+                        РИСУНОК И СПЕЦГРАФИКА
+                    </button>
+                    <button class="button_tsvet button_text">
+                        ЦВЕТОВЕДЕНИЕ
+                    </button>
+                    
+
+                </div>
+                <div class="buttons-middle">
+                    <img class="button_girl" src="images/девочка_без_руки.png" alt="">
+                    <button class="button_text button_kompoz" onclick="">
+                        КОМПОЗИЦИЯ
+                    </button>
+                    <img class="girl_hand" src="images/рука.png" alt="">
+                </div>
+
+
+                <div class="buttons-right">
+                    <button class="button_3D button_text">
+                        3D МОДЕЛИРОВАНИЕ
+                    </button>
+                    <button class="button_tpgraph button_text">
+                        ТИПОГРАФИКА
+                    </button>
+                    <button class="button_hb button_text">
+                        ХОББИ
+                    </button>
+                </div>
+            </div>
+            <button id="scroll_2" class="skroll skroll_2">
+                <img src="images/кнопка_возврат.png"/>
+            </button>
+        </div>
+
+
+        <div id="contacts" class="contacts-container">
+            <h1>КОНТАКТЫ</h1>
+            <img class="VK" src="images/вк.png" alt="">
+            <img class="TG" src="images/тг.png" alt="">
+            <img class="Mail" src="images/почта.png" alt="">
+            <img class="Insta" src="images/инста.png" alt="">
+            <img class="alis" src="images/алис.png" alt="">
+            <a class="VK_" href="https://vk.com/id315282386">Алиса Казакевич</a>
+            <a class="TG_" href="https://t.me/alis_kujo">alis_kujo</a>
+            <a class="Mail_" href="mailto:alis13ya@gmail.com">Алиса Казакевич</a>
+            <a class="Insta_" href="https://www.instagram.com/alis_kujo/">alis_kujo</a>
+                
+            
+        </div>
+        <button id="scroll_3" class="skroll skroll_3">
+            <img src="images/кнопка_возврат.png"/>
+        </button>
     </main>
     <footer>
-        <img src="лого.png" alt="INTRO"
+        <img src="images/лого.png" alt="INTRO">
         <ul>
             <li><a href = "#">ОБО МНЕ</a></li>
             <li><a href = "#">МОИ РАБОТЫ</a></li>
@@ -29,6 +119,12 @@
     </footer>
     
     
+    <!-- <script src="myscript.js"></script> -->
+    <link rel="stylesheet" href="lightzoom/style.css">
+    <script src="lightzoom/lightzoom.js"></script>
+
     
+    <script src="myscript.js"></script>
+    <script>jQuery('.lightzoom').lightzoom({speed:400, viewTitle:true});</script>
 </body>
 </html>

@@ -1,28 +1,355 @@
+@font-face {
+font-family: 'Potra';
+src: url('./fonts/Potra/potra_cyr-webfont.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Russo One';
+    src: url('./fonts/Russo one/russoone-regular-webfont.woff2') format('woff2');
+    }
 header{
     background-color:#FF00A8;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+h1{
+    color: white;
+    font-size: 64px;
+    
+    font-family: 'Potra';
+    margin-top: 1vw;
+    
+}
+h2{
+    color: white;
+    font-size: 48px;
+    padding-top: 2vw;
+    font-family: 'Potra';
+}
+h3{
+    color: white;
+    
+    padding-top: 2vw;
+    font-family: 'Potra';
+
+}
+p{
+    color: white;
+    font-size: 48px;
+    padding-top: 2vw;
+    font-family: 'Russo One';
+    
 }
 ul{
     list-style: none;
     margin: 0;
-    padding:20px ;
+    font-size: 40px;
+    font-family: 'Potra';
+    z-index: 11;
 }
 a{
     font-size: 40px;
     padding: 20px;
     color: white;
     text-decoration: none;
-    font-family:'Potra';
+    font-family: 'Potra';
     }
 a:hover{
     color:black;
     text-decoration: none;
+
 }
 li{
+    position: relative;
     display: inline;
+    z-index: 11;
+}
+.logo{
+    position: relative;
+    z-index: 11;
 }
 main{
     background-color:black; 
 }
 footer{
     background-color:#FF00A8;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
 }
+
+.main-container {
+    margin-left: 18.5%;
+    width: 75%;
+    margin-top: -0.005vw;
+    z-index: 8;
+    
+}
+
+.girl-gif {
+    position: relative;
+    top: -56px;
+    left: -2.5vw ;
+    z-index: 8;
+}
+.my_photo{
+    margin-left: 10vw;
+    margin-top: 2vw;
+}
+.main-info{
+    width: 490px;
+    padding-top: 2vw;
+}
+
+.about-me {
+    display: flex;
+    margin-top: 2vw;
+    @media (width<800px) {
+        flex-direction: column;
+        
+    }
+}
+
+.skills{
+    padding-top: 2vw;
+}
+
+.works-container {
+    margin-left: 18.5%;
+    width: 75%;
+    margin-top: 8vw;
+    padding-top: 1vw;
+}
+.button_ris{
+    background-color: #FF00A8;
+    border-radius: 15px;
+    user-select: none;
+    position: relative;
+    width: 387px; 
+    height: 156px;
+    margin-top: 10vw;
+    border-color: white;
+    border-width: 0.2vw;
+    
+    
+
+}
+.button_ris:hover{
+    transform: scale(1.05);
+}
+.button_tsvet{
+    background-color: #FF00A8;
+    border-radius: 15px;
+    user-select: none;
+    position: relative;
+    width: 387px; 
+    height: 156px;
+    margin-top: 2vw;
+    border-color: white;
+    border-width: 0.2vw;
+}
+.button_tsvet:hover{
+    transform: scale(1.05);
+}
+.button_text{
+    font-size: 45px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Potra';
+    text-align: center;
+    line-height: 100%;
+}
+
+.button_kompoz{
+    position: relative;
+    background-color: #FF00A8;
+    border-radius: 15px;
+    user-select: none;
+    width: 387px; 
+    height: 156px;
+    z-index: 3;
+    transform: rotate(50deg) translate(-380px, -300px);
+    border-color: white;
+    border-width: 0.2vw;
+}
+.button_kompoz:hover{
+    transform: rotate(50deg) translate(-380px, -300px)scale(1.05);
+}
+.button_3D{
+    background-color: #FF00A8;
+    border-radius: 15px;
+    user-select: none;
+    position: relative;
+    width: 387px; 
+    height: 156px;
+    border-color: white;
+    border-width: 0.2vw;
+    
+
+}
+.button_3D:hover{
+    transform: scale(1.05);
+}
+.button_tpgraph{
+    background-color: #FF00A8;
+    border-radius: 15px;
+    user-select: none;
+    position: relative;
+    width: 387px; 
+    height: 156px;
+    margin-top: 2vw;
+    border-color: white;
+    border-width: 0.2vw;
+
+}
+.button_tpgraph:hover{
+    transform: scale(1.05);
+}
+.button_hb{
+    background-color: #FF00A8;
+    border-radius: 15px;
+    user-select: none;
+    position: relative;
+    width: 387px; 
+    height: 156px;
+    margin-top: 2vw;
+    border-color: white;
+    border-width: 0.2vw;
+
+}
+.button_hb:hover{
+    transform: scale(1.05);
+}
+
+.secret_Button{
+    font-size: 50px;
+    font-family: 'Russo One';
+    text-decoration: none;
+    text-align: center;
+    line-height: 100%;
+    background-color: transparent; 
+    border: none; 
+    padding: 0;
+    user-select: none;
+    position: absolute; 
+    top: 19%; 
+    left: 70%; 
+    z-index: 10;
+}
+.secret_Button:hover{
+    color: #FF00A8 ;
+}
+
+.buttons-container {
+    display: flex;
+    margin-top: 2vw;
+}
+.button_girl{
+    position: relative;
+    z-index: 2;
+    margin-left: 130px;
+}
+.girl_hand{
+    position: absolute;
+    z-index: 4;
+    margin-left: -215px;
+    margin-top: -625px;
+}
+.contacts-container{
+    margin-left: 18.5%;
+    width: 75%;
+    margin-top: 8vw;
+    padding-top: 1vw;
+}
+.alis{
+    margin-left: 15vw;
+    margin-top: 10vw;
+    padding-top: 1vw;
+    padding-bottom: 2vw;
+    
+}
+.VK{
+    position: absolute;
+    margin-top: 1.5vw;
+}
+.TG{
+    position: absolute;
+    margin-top: 7.5vw;
+}
+.Mail{
+    position: absolute;
+    margin-top: 1.5vw;
+    margin-left: 39vw;
+}
+.Insta{
+    position: absolute;
+    margin-top: 7.5vw;
+    margin-left: 39vw;
+}
+.VK_{
+    position: absolute;
+    margin-top: 1.5vw;
+    margin-left: -51vw;
+    font-size: 40px;
+    font-family: Russo One;
+}
+.VK_:hover{
+    color:#FF00A8;
+}
+.TG_{
+    position: absolute;
+    margin-top: 8vw;
+    margin-left: -51vw;
+    font-size: 40px;
+    font-family: Russo One;
+}
+.TG_:hover{
+    color:#FF00A8;
+}
+.Mail_{
+    position: absolute;
+    margin-top: 1.5vw;
+    margin-left: -12vw;
+    font-size: 40px;
+    font-family: Russo One;
+}
+.Mail_:hover{
+    color:#FF00A8;
+} 
+.Insta_{
+    position: absolute;
+    margin-top: 8vw;
+    margin-left: -12vw;
+    font-size: 40px;
+    font-family: Russo One;
+}
+.Insta_:hover{
+    color:#FF00A8;
+} 
+.skroll{
+    text-decoration: none;
+    background-color: transparent; 
+    border: none; 
+    padding: 0;
+    user-select: none;
+    position: absolute; 
+}
+.skroll:hover{
+    transform: scale(1.08);
+} 
+.skroll_1{
+    margin-left: 62vw;
+    margin-top: -7vw;
+} 
+.skroll_2{
+    margin-left: 62vw;
+    margin-top: -17vw;
+}  
+.skroll_3{
+    margin-left: 80.2vw;
+    margin-top: -9vw;
+}    

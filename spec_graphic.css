@@ -1,0 +1,159 @@
+@font-face {
+    font-family: 'Potra';
+    src: url('./fonts/Potra/potra_cyr-webfont.woff2') format('woff2');
+    }
+    @font-face {
+        font-family: 'Russo One';
+        src: url('./fonts/Russo one/russoone-regular-webfont.woff2') format('woff2');
+        }
+    h1{
+        color: white;
+        font-size: 3.3vw;  
+        font-family: 'Potra';
+        position: absolute;
+        z-index: 2;
+        margin-top: 1vw;
+    }
+    
+    body{
+        background-color:black;
+    } 
+    .main-container {
+        margin-left: 18.5%;
+        width: 75%;
+    } 
+    .slider-container{
+        margin-left: 18.5%;
+        width: 75%;
+    }
+    .slider{
+        overflow: hidden;
+        max-width: 90%;
+    }
+    .slider-line{
+        display: flex;
+        transition: all ease 1s;
+    }
+    .before{
+        width: 4.36vw; 
+        height: 4.85vw;
+        background-size: contain; 
+        background-image: url("images/кнопка_право.png"); 
+        border: none;
+        cursor: pointer;
+        background-color: transparent; 
+        padding: 0;   
+        position: absolute; 
+        z-index: 2;
+        margin-top: -25vw;
+        margin-left:62.7vw;
+        display: block;
+
+        
+    }
+    .before:hover{
+        background-image: url("images/кнопка_право_ховер.png");
+    }
+    .next{
+        width: 4.36vw; 
+        height: 4.85vw;
+        background-size: contain;  
+        background-image: url("images/кнопка_лево.png"); 
+        border: none;
+        cursor: pointer;
+        background-color: transparent; 
+        padding: 0;   
+        position: absolute; 
+        z-index: 2;
+        margin-top: -25vw;
+        display: block;
+        
+
+        
+    }
+    .next:hover{
+        background-image: url("images/кнопка_лево_ховер.png");
+    }
+    .slider-container2{
+        margin-left: 15%;
+        width: 54%;
+    }
+    .slider2{
+        overflow: hidden;
+        max-width: 90%;
+    }
+    .slider-line2{
+        display: flex;
+        transition: all ease 1s;
+    }
+    .before2{
+        width: 4.36vw; 
+        height: 4.85vw;
+        background-size: contain; 
+        background-image: url("images/кнопка_право.png"); 
+        border: none;
+        cursor: pointer;
+        background-color: transparent; 
+        padding: 0;   
+        position: absolute; 
+        z-index: 2;
+        margin-top: -50vw;
+        margin-left:44vw;
+        display: none;
+
+        
+    }
+    .before2:hover{
+        background-image: url("images/кнопка_право_ховер.png");
+    }
+    .next2{
+        width: 4.36vw; 
+        height: 4.85vw;
+        background-size: contain;  
+        background-image: url("images/кнопка_лево.png"); 
+        border: none;
+        cursor: pointer;
+        background-color: transparent; 
+        padding: 0;   
+        position: absolute; 
+        z-index: 2;
+        margin-top: -50vw;
+        display: none;
+        
+
+        
+    }
+    .next2:hover{
+        background-image: url("images/кнопка_лево_ховер.png");
+    }
+    .slider {
+        display: block;
+    }
+    
+    .slider2 {
+        display: none;
+    }
+    
+    @media only screen and (max-width: 800px) {
+        .slider {
+            display: none;
+        }
+        .slider2 {
+            display: block;
+        }
+        .next{
+            display: none;
+        }
+        .next2{
+            display: block;
+        }
+        .before{
+            display: none;
+        }
+        .before2{
+            display: block;
+        }
+        h1{
+            margin-left: -4vw;
+        }
+    }    
