@@ -73,6 +73,9 @@ li{
 main{
     background-color:black; 
 }
+body{
+    background-color:black; 
+}
 footer{
     background-color:#FF00A8;
     display: flex;
@@ -352,4 +355,79 @@ footer{
 .skroll_3{
     margin-left: 80.2vw;
     margin-top: -9vw;
-}    
+} 
+
+.page-slide-right {
+    animation: pageSlideRight 1s cubic-bezier(0.645, 0.045, 0.355, 1) forwards;
+}
+.Tell{
+    position: absolute;
+    margin-top: 14vw;
+    margin-left: -19vw;
+}
+.Tel{
+    position: absolute;
+    margin-top: 14vw;
+    margin-left: -12vw;
+    font-size: 40px;
+    font-family: Russo One;    
+}
+
+.Tel:hover{
+    color:#FF00A8;
+}
+.message-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    display: none;
+}
+
+.message-content  {
+    margin-bottom: 10px;
+}
+
+.message-content  {
+    padding: 5px 10px;
+    margin-right: 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.bw-mode {
+    filter: grayscale(100%);
+}
+
+.hidden {
+    display: none;
+}
+
+/* Анимация смещения страницы вправо */
+@keyframes pageSlideRight {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100vw); /* Смещаем страницу за пределы экрана */
+    }
+} 
+.page-slide-left {
+    animation: pageSlideLeft 1s cubic-bezier(0.645, 0.045, 0.355, 1) forwards;
+}
+  /* Анимация смещения страницы влево */
+  @keyframes pageSlideLeft {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100vw); /* Смещаем страницу за пределы экрана влево */
+    }
+}

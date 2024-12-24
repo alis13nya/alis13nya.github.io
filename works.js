@@ -98,4 +98,27 @@ document.querySelector('.before2').addEventListener('click', function() {
 function rollSlider2() {
     sliderLine2.style.transform = 'translate(-' + count2 * width2 + 'px)'; 
 }
-
+function go_main_works() {
+    // Получаем тело документа
+    const body = document.body;
+    
+    // Добавляем класс анимации
+    body.classList.add('page-slide-left');
+    
+    // Устанавливаем таймер для перехода на новую страницу после завершения анимации
+    setTimeout(() => {
+        window.location.href = 'index.html#works';
+    }, 1000); // Задержка соответствует длительности анимации (1 секунда)
+}
+function go_main_works_right() {
+    // Получаем тело документа
+    const body = document.body;
+    
+    // Добавляем класс анимации
+    body.classList.add('page-slide-right');
+    
+    // Устанавливаем таймер для перехода на новую страницу после завершения анимации
+    setTimeout(() => {
+        window.location.href = 'index.html#works';
+    }, 1000); // Задержка соответствует длительности анимации (1 секунда)
+}

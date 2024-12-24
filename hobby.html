@@ -3,15 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Alis</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="reset.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="/fonts/Potra_cyr.ttf" rel="preload" as="font">
-    <link href="/fonts/Potra_cyr.ttf" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="works.css">
     <script src="/jquery.js"></script>
     <link rel="icon" href="images/иконка.ico">
 </head>
 <body>
-    <h1>ХОББИ</h1>
+    <div class="main-container">
+        <h1>ХОББИ</h1>
+    </div>
+    <button onclick="go_main_works_right()" class="main_button">НА ГЛАВНУЮ</button>
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slider-line">
+                <img src="images/сяо.png" alt="">
+                <img src="images/лис.png" alt="">
+                <img src="images/кошкадино.png" alt="">
+                <img src="images/ута.png" alt="">
+            </div>
+        </div>
+        <button class="before"></button>
+        <button class="next"></button>   
+    </div>
+    <div class="slider-container2">
+        <div class="slider2">
+            <div class="slider-line2" >
+                <img src="images/сяо2.png" alt="">
+                <img src="images/лис2.png" alt="">
+                <img src="images/кошкодино2.png" alt="">
+                
+            </div>
+        </div>
+        <button class="before2"></button>
+        <button class="next2"></button>   
+    </div>
+
+    
+    
+    <script src="works.js"></script>
 </body>
 </html>

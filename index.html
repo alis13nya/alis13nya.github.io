@@ -54,18 +54,18 @@
             <h1>МОИ РАБОТЫ</h1>
             <div class="buttons-container">
                 <div class="buttons-left">
-                    <button onclick="location.href='spec_graphic.html'" class="button_ris button_text">
+                    <button onclick="go_spec()" class="button_ris button_text">
                         РИСУНОК И СПЕЦГРАФИКА
                     </button>
-                    <button class="button_tsvet button_text">
+                    <button onclick="go_color_science()" class="button_tsvet button_text">
                         ЦВЕТОВЕДЕНИЕ
                     </button>
                     
 
                 </div>
                 <div class="buttons-middle">
-                    <img class="button_girl" src="images/девочка_без_руки.png" alt="">
-                    <button class="button_text button_kompoz" onclick="">
+                    <img  class="button_girl" src="images/девочка_без_руки.png" alt="">
+                    <button onclick="go_compoz()" class="button_text button_kompoz" onclick="">
                         КОМПОЗИЦИЯ
                     </button>
                     <img class="girl_hand" src="images/рука.png" alt="">
@@ -73,13 +73,13 @@
 
 
                 <div class="buttons-right">
-                    <button class="button_3D button_text">
+                    <button onclick="go_3D()" class="button_3D button_text">
                         3D МОДЕЛИРОВАНИЕ
                     </button>
-                    <button class="button_tpgraph button_text">
+                    <button onclick="go_typo()" class="button_tpgraph button_text">
                         ТИПОГРАФИКА
                     </button>
-                    <button class="button_hb button_text">
+                    <button onclick="go_hb()" class="button_hb button_text">
                         ХОББИ
                     </button>
                 </div>
@@ -97,16 +97,31 @@
             <img class="Mail" src="images/почта.png" alt="">
             <img class="Insta" src="images/инста.png" alt="">
             <img class="alis" src="images/алис.png" alt="">
+            <img class="Tell" src="images/tel.png" alt="">
+            
             <a class="VK_" href="https://vk.com/id315282386">Алиса Казакевич</a>
             <a class="TG_" href="https://t.me/alis_kujo">alis_kujo</a>
             <a class="Mail_" href="mailto:alis13ya@gmail.com">Алиса Казакевич</a>
             <a class="Insta_" href="https://www.instagram.com/alis_kujo/">alis_kujo</a>
+            <a class="Tel" href="tel:+7 921 587 39 75">+7 921 587 39 75</a>
+            
                 
             
         </div>
         <button id="scroll_3" class="skroll skroll_3">
             <img src="images/кнопка_возврат.png"/>
         </button>
+
+        <div id="message-container" class="hidden">
+            <div id="message-content">
+                <p>Вы хейтер розового?</p>
+                <button id="no-button">Нет</button>
+                <button id="yes-button">Да</button>
+            </div>
+        </div>
+        
+       
+        
     </main>
     <footer>
         <img src="images/лого.png" alt="INTRO">

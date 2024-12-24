@@ -76,8 +76,9 @@
         background-image: url("images/кнопка_лево_ховер.png");
     }
     .slider-container2{
-        margin-left: 15%;
-        width: 54%;
+        margin-left: 0%;
+        width: 100%;
+        
     }
     .slider2{
         overflow: hidden;
@@ -88,8 +89,8 @@
         transition: all ease 1s;
     }
     .before2{
-        width: 4.36vw; 
-        height: 4.85vw;
+        width: 9vw; 
+        height: 10vw;
         background-size: contain; 
         background-image: url("images/кнопка_право.png"); 
         border: none;
@@ -98,8 +99,8 @@
         padding: 0;   
         position: absolute; 
         z-index: 2;
-        margin-top: -50vw;
-        margin-left:44vw;
+        margin-top: -80vw;
+        margin-left:80vw;
         display: none;
 
         
@@ -108,8 +109,8 @@
         background-image: url("images/кнопка_право_ховер.png");
     }
     .next2{
-        width: 4.36vw; 
-        height: 4.85vw;
+        width: 9vw; 
+        height: 10vw;
         background-size: contain;  
         background-image: url("images/кнопка_лево.png"); 
         border: none;
@@ -118,7 +119,8 @@
         padding: 0;   
         position: absolute; 
         z-index: 2;
-        margin-top: -50vw;
+        margin-top: -80vw;
+        margin-left:2vw;
         display: none;
         
 
@@ -135,6 +137,25 @@
         display: none;
     }
     
+
+    .main_button{
+        background-color: #FF00A8;
+        border-color: white;
+        width: 10vw;
+        height: 3vw;
+        margin-top: 1vw;
+        margin-left: 7vw;
+        z-index: 12;
+        border-radius: 0.5vw;
+        font-size: 0.8vw;
+        font-family: 'Russo One';
+        color: white;
+        position: absolute;
+        border-width: 0.2vw;
+    }
+    .main_button:hover{
+        transform: scale(1.05);
+    }
     @media only screen and (max-width: 800px) {
         .slider {
             display: none;
@@ -156,5 +177,46 @@
         }
         h1{
             margin-left: -4vw;
+            margin-top: 6vw;
         }
-    }    
+        .main_button{
+            margin-left: 14vw;
+            width: 20vw;
+            height: 4vw;
+            font-size: 1.5vw;
+        }
+        .main_button:hover{
+            transform: scale(1.03);
+        }
+        
+        
+    }
+    .page-slide-left {
+        animation: pageSlideLeft 1s cubic-bezier(0.645, 0.045, 0.355, 1) forwards;
+    }
+    
+    /* Анимация смещения страницы влево */
+    @keyframes pageSlideLeft {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-100vw); /* Смещаем страницу за пределы экрана влево */
+        }
+    }
+    .page-slide-right {
+        animation: pageSlideRight 1s cubic-bezier(0.645, 0.045, 0.355, 1) forwards;
+    }
+    
+    /* Анимация смещения страницы вправо */
+    @keyframes pageSlideRight {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(100vw); /* Смещаем страницу за пределы экрана */
+        }
+    } 
+
+    
+    

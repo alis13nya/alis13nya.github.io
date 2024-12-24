@@ -41,3 +41,79 @@ document.getElementById('contacts_scroll').addEventListener('click', function() 
     const section = document.getElementById('contacts');
     section.scrollIntoView({ behavior: 'smooth' });
 });
+function go_spec() {
+    // Получаем тело документа
+    const body = document.body;
+    
+    // Добавляем класс анимации
+    body.classList.add('page-slide-right');
+    
+    // Устанавливаем таймер для перехода на новую страницу после завершения анимации
+    setTimeout(() => {
+        window.location.href = 'spec_graphic.html';
+    }, 1000); // Увеличенная задержка для соответствия длительности анимации (1 секунда)
+}
+function go_compoz() {
+    // Получаем тело документа
+    const body = document.body;
+    
+    // Добавляем класс анимации
+    body.classList.add('page-slide-right');
+    
+    // Устанавливаем таймер для перехода на новую страницу после завершения анимации
+    setTimeout(() => {
+        window.location.href = 'composition.html';
+    }, 1000); // Увеличенная задержка для соответствия длительности анимации (1 секунда)
+}
+function go_color_science() {
+    // Получаем тело документа
+    const body = document.body;
+    
+    // Добавляем класс анимации
+    body.classList.add('page-slide-right');
+    
+    // Устанавливаем таймер для перехода на новую страницу после завершения анимации
+    setTimeout(() => {
+        window.location.href = 'color_science.html';
+    }, 1000); // Увеличенная задержка для соответствия длительности анимации (1 секунда)
+}
+function go_3D() {
+    // Получаем тело документа
+    const body = document.body;
+    
+    // Добавляем класс анимации
+    body.classList.add('page-slide-left');
+    
+    // Устанавливаем таймер для перехода на новую страницу после завершения анимации
+    setTimeout(() => {
+        window.location.href = '3D_modeling.html';
+    }, 1000); // Задержка соответствует длительности анимации (1 секунда)
+}
+function go_typo() {
+    // Получаем тело документа
+    const body = document.body;
+    
+    // Добавляем класс анимации
+    body.classList.add('page-slide-left');
+    
+    // Устанавливаем таймер для перехода на новую страницу после завершения анимации
+    setTimeout(() => {
+        window.location.href = 'typography.html';
+    }, 1000); // Задержка соответствует длительности анимации (1 секунда)
+}
+function go_hb() {
+    // Получаем тело документа
+    const body = document.body;
+    
+    // Добавляем класс анимации
+    body.classList.add('page-slide-left');
+    
+    // Устанавливаем таймер для перехода на новую страницу после завершения анимации
+    setTimeout(() => {
+        window.location.href = 'hobby.html';
+    }, 1000); // Задержка соответствует длительности анимации (1 секунда)
+}
+
+
+
+
